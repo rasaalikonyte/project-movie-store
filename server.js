@@ -50,6 +50,14 @@ app.put("/movies/:id", (req, res) => {
   movie.rating = rating;
   res.status(200).send(movie);
 });
+
+// Delete a movie by ID
+app.delete("/movies/:id", (req, res) => {
+  const { id } = req.params;
+  movies = movies.filter((item) => item.id != id);
+  res.status(204).send();
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
