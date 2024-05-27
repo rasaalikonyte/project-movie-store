@@ -1,0 +1,331 @@
+{
+	"id": "7171232a-8382-4905-9999-a1aeaca04c86",
+	"name": "project-movie-store",
+	"timestamp": "2024-05-27T12:53:44.180Z",
+	"collection_id": "34607912-1ccfcf62-6ce3-462e-9532-f3bcfc2f672b",
+	"folder_id": 0,
+	"environment_id": "34607912-73336972-1ce4-4647-ad19-d71f4ad8bc71",
+	"totalPass": 18,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-27T12:53:43.154Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "a6bd4103-9eef-4aa0-9153-891008098c59",
+			"name": "create movie",
+			"url": "localhost:3000/movies",
+			"time": 31,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"Title is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Title is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"Title is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "6d2786de-9dc9-4e20-b552-bf08dea32c07",
+			"name": "get movie by id",
+			"url": "localhost:3000/movies/1",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Response body is an object and not an array": true,
+				"Movie with ID 1 has the specified data": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an object and not an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Movie with ID 1 has the specified data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Response body is an object and not an array": true,
+					"Movie with ID 1 has the specified data": true
+				}
+			]
+		},
+		{
+			"id": "ec940b93-ef2d-4078-b1ec-fb7eee5ae37d",
+			"name": "get all movies",
+			"url": "localhost:3000/movies",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response body is an array and not empty": true,
+				"Movie with ID 1 has the specified data": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Movie with ID 1 has the specified data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response body is an array and not empty": true,
+					"Movie with ID 1 has the specified data": true
+				}
+			]
+		},
+		{
+			"id": "4c409900-bcdf-4f2e-a953-dcd806bfb6d1",
+			"name": "delete movie by id",
+			"url": "localhost:3000/movies/1",
+			"time": 2,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "68206b1f-59e7-4d9c-b72c-cd601753a2d2",
+			"name": "get movie by id",
+			"url": "localhost:3000/movies/1",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d0a032da-4b9d-43c9-ae52-1293e61bb567",
+			"name": "create movie",
+			"url": "localhost:3000/movies",
+			"time": 2,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"Title is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Title is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"Title is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "0e7a0ffc-9839-4b79-be78-49aa17af7add",
+			"name": "update rating by id",
+			"url": "localhost:3000/movies/1",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0b70e75e-dacf-45f3-acc1-1e7ece4d34c4",
+			"name": "get movie by id",
+			"url": "localhost:3000/movies/1",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2052502f-47d2-4d7b-acf0-20c61a750273",
+			"name": "get all movies",
+			"url": "localhost:3000/movies",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response body is an array and not empty": true,
+				"Movie with ID 1 has the specified data": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Movie with ID 1 has the specified data": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response body is an array and not empty": true,
+					"Movie with ID 1 has the specified data": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 50,
+	"collection": {
+		"requests": [
+			{
+				"id": "a6bd4103-9eef-4aa0-9153-891008098c59",
+				"method": "POST"
+			},
+			{
+				"id": "6d2786de-9dc9-4e20-b552-bf08dea32c07",
+				"method": "GET"
+			},
+			{
+				"id": "ec940b93-ef2d-4078-b1ec-fb7eee5ae37d",
+				"method": "GET"
+			},
+			{
+				"id": "4c409900-bcdf-4f2e-a953-dcd806bfb6d1",
+				"method": "DELETE"
+			},
+			{
+				"id": "68206b1f-59e7-4d9c-b72c-cd601753a2d2",
+				"method": "GET"
+			},
+			{
+				"id": "d0a032da-4b9d-43c9-ae52-1293e61bb567",
+				"method": "POST"
+			},
+			{
+				"id": "0e7a0ffc-9839-4b79-be78-49aa17af7add",
+				"method": "PUT"
+			},
+			{
+				"id": "0b70e75e-dacf-45f3-acc1-1e7ece4d34c4",
+				"method": "GET"
+			},
+			{
+				"id": "2052502f-47d2-4d7b-acf0-20c61a750273",
+				"method": "GET"
+			}
+		]
+	}
+}
