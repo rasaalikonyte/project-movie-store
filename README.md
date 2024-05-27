@@ -6,4 +6,5 @@ npm i newman --save-dev
 package.json
 "scripts": {
 "start": "nodemon server.js",
-"test": 
+"test":
+}
