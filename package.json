@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "newman run project-movie-store.postman_test_run -e project-movie-store.postman_environment.json"
-     
+    "test": "newman run project-movie-store.postman_test_run -e project-movie-store.postman_environment.json",
+    "test:report": "newman run project-movie-store.postman_test_run.json -r htmlextra"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +17,7 @@
   },
   "devDependencies": {
     "newman": "^6.1.2",
+    "newman-reporter-htmlextra": "^1.23.1",
     "nodemon": "^3.1.1"
   }
 }
