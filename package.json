@@ -4,9 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "newman run movie-store.postman_collection.json -e movie-store.postman_environment.json"
+     
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
