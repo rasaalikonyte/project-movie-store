@@ -23,6 +23,20 @@ app.post("/movies", (req, res) => {
   res.status(201).send(movie);
 });
 
+// Get all movies
+app.get("/movies", (req, res) => {
+  res.status(200).send(movies);
+});
+
+// Get a movie by ID
+app.get("/movies/:id", (req, res) => {
+  const movie = movies.find((m) => m.id === parseInt(req.params.id));
+  if (!movie) {
+    return res.status(404).send("Movie not found");
+  }
+  res.status(200).send(movie);
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
