@@ -1,4 +1,5 @@
 Project-movie-store automation testing (newman, Postman)
+npm i;
 npm run dev;
 npm run test;
 application http://localhost:3000/movies
