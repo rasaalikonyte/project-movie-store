@@ -37,7 +37,7 @@ To run the development server and execute tests, use the following commands:
 1. **Start the Development Server**
 
    ```bash
-   npm run dev
+   npm run start
    ```
 
 2. **Run Tests**
@@ -48,7 +48,3 @@ To run the development server and execute tests, use the following commands:
 ## Application
 
 The application can be accessed at: [http://localhost:3000/movies](http://localhost:3000/movies)
-
----
-
-Feel free to contribute and make this project even better. Happy coding!
