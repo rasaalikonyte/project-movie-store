@@ -10,24 +10,8 @@ Welcome to the Project Movie Store repository. This project is focused on automa
 
 ## Installation
 
-To set up the project, follow these steps:
-
-1. **Initialize the Project**
-
    ```bash
-   npm init -y
-   ```
-
-2. **Install Dependencies**
-
-   ```bash
-   npm install express body-parser
-   ```
-
-3. **Install Development Dependencies**
-   ```bash
-   npm install nodemon --save-dev
-   npm install newman --save-dev
+   npm install 
    ```
 
 ## Usage
