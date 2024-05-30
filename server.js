@@ -51,7 +51,7 @@ app.put("/movies/:id", (req, res) => {
   res.status(200).send(movie);
 });
 
-// Delete movie by ID
+// Delete by ID
 app.delete("/movies/:id", (req, res) => {
   const { id } = req.params;
   movies = movies.filter((item) => item.id != id);
