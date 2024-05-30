@@ -33,7 +33,7 @@ To run the development server and execute tests, use the following commands:
 
 1. **Start the Development Server**
     ```bash
-    npm run dev
+    npm run start
     ```
 
 2. **Run Tests**
